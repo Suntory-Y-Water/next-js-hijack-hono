@@ -1,4 +1,4 @@
-import type { AppType } from '@hono-hijack/backend';
+import type { AppType } from 'app/api/[...route]/route';
 import { hc } from 'hono/client';
 import { getBaseURL } from './baseUrl';
 

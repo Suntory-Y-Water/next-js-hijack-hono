@@ -1,0 +1,12 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "frontend"
+compatibility_date = "2024-12-29"
+# compatibility_flags = ["nodejs_compat"]
+# pages_build_output_dir = ".vercel/output/static"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "kinpatsu-heroine-com-database"
+database_id = "cb8b4f67-35f4-4579-83b8-04620d59f33f"
+preview_database_id = "kinpatsu-heroine-com-preview-database"  # Required for Pages local development
+migrations_dir = "drizzle"

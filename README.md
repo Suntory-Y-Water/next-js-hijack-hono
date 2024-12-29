@@ -1,1 +1,4 @@
-# next-js-hijack-hono-
+```
+npm install
+npm run dev
+```

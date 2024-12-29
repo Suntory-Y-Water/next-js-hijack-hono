@@ -1,12 +1,13 @@
+export const runtime = 'edge';
 export const dynamic = 'force-dynamic';
 
 import { client } from './lib/client';
 
 export default async function Home() {
-  const response = await client.hello.$get();
+  const response = await client.api.hello.$get();
   const data = await response.json();
 
-  const message = await client.message[':message']
+  const message = await client.api.message[':message']
     .$get({
       param: { message: 'こんにちは、世界' },
     })
